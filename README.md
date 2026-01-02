@@ -1,12 +1,5 @@
 # TCR structural redundancy evaluation
 These codes contains the experimental codes of Explainable Methods for Evaluating Structural Redundancy of CNNs. The codes runs on Tensorflow 2.7 and python 3.7.0, they also relies on pandas, scipy and libraries. The dataset used in this paper is CIFAR-10. 
 # Introduction of TCR structural redundancy evalution 
-As a method for assessing structural redundancy, the TCR assessment method is based on the CNN structured pruning algorithm and the linear probe method. By analyzing whether the channel outputs can have effective outputs that can assist the network in classification, it realizes the construction of quantitative indicators for the contribution of channels to the network. Based on this, a method for evaluating the redundancy of network substructures and a method for structuring pruning of the network are constructed to achieve the assessment of structural redundancy of the entire network and its substructures.
+As a method for evaluat structural redundancy, the TCR evaluation method is based on the CNN structured pruning algorithm and the linear probe method. By analyzing whether the channel outputs can have effective outputs that can assist the network in classification, it realizes the construction of quantitative criteria for the contribution of channels to the network. Based on this, a method for evaluating the redundancy of network substructures and a method for structuring pruning of the network are constructed to achieve the evaluation of structural redundancy of the entire network and its substructures.
 
-Our redundancy evaluate method has the following advantages: 
-
-High intelligibility: This evaluation method visually presents the contributions of each channel in the CNN to the classification task through the TCR measure. Based on this, an algorithm for evaluating the redundancy of the entire network and its substructures is constructed. Thereby achieving high intelligibility of the evaluation algorithm;
-
-Full objectivity: The evaluation criteria of this method are almost devoid of randomness, and the computational process for deriving the evaluation results is designed to minimize the influence of subjective factors, such as hyperparameter settings in the evaluation algorithm, thereby ensuring a high degree of objectivity;
-
-High applicability: Since this evaluation method is based on task construction, the identification of redundant channels is highly dependent on whether the channels can make a significant positive contribution to the task. This enables it to provide targeted evaluation results in different task scenarios, making it more capable of adapting to the wide range of classification application scenarios in CV problems.
